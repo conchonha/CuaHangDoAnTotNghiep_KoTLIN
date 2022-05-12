@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="6dp"
+        android:layout_marginTop="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="6dp"
+        android:layout_height="130dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:src="@drawable/user"
+                android:scaleType="fitXY"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#000"
+                android:elevation="6dp"
+                android:id="@+id/imgchuanhanxet"
+                android:layout_height="100dp"/>
+            <TextView
+                android:layout_width="2dp"
+                android:background="@color/colorchu"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/txtbackground7"
+                android:layout_toRightOf="@+id/imgchuanhanxet"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/txtbackground7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:id="@+id/txtngaygiaohang"
+                    android:text="Đã giao hàng ngày"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:id="@+id/txttensanpham_nhanxet"
+                    android:text="giày thể thao nam"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:background="@drawable/bodergiohang"
+                    android:text="Nhận Xét"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/btnnhanxet1"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorchu"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

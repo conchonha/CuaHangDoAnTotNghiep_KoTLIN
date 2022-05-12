@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.admin.UpdateTinTuc">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorchu"
+        android:id="@+id/toolbar_UpdateNews"
+        app:title="Update Bản Tin"
+        app:titleTextColor="#fff"
+        android:layout_height="wrap_content"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:textColor="#fff"
+       android:hint="Nhập nội dung bản tin"
+       android:id="@+id/edt_UpdateContent"
+       android:textColorHint="#fff"
+       android:background="@drawable/boder"
+       android:layout_margin="10dp"
+       android:textSize="18dp"
+       android:padding="10dp"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/boder"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Bài Viết"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:padding="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Nhập Tên Bài Viết"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edt_NameNewsUpdate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bodergiohang"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình Ảnh Bài Viết"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:padding="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:scaleType="fitXY"
+                android:id="@+id/img_PictureContentUpdate"
+                android:src="@drawable/delete"
+                android:layout_height="100dp"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:id="@+id/img_AddPictureUpdate"
+                android:layout_marginLeft="50dp"
+                android:layout_height="70dp"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/colorchu"
+            android:textColor="#fff"
+            android:id="@+id/btn_UpdateNews"
+            android:text="Update"
+            android:textSize="20dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+</LinearLayout>

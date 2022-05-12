@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="LapTop - Macbook"
+        android:id="@+id/laptopmacbook"/>
+    <item android:title="Linh Kiện LapTop"
+        android:id="@+id/linhkien"/>
+    <item android:title="TB Lưu Trữ - Phụ Kiện"
+        android:id="@+id/tbluutrupk"/>
+    <item android:title="TB Nghe - Nhìn"
+        android:icon="@drawable/iconmenu"
+        app:showAsAction="always"
+        android:id="@+id/tbnghenhin"/>
+
+</menu>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Hoadon">
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/imgback"
+            app:title="Hóa Đơn Tạm Tính"
+            app:titleTextColor="@color/colorwhile"
+            android:background="@color/colorchu"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_below="@+id/imgback"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:id="@+id/txthoadon"
+            android:textStyle="bold"
+            android:text="Hóa Đơn"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_below="@+id/txthoadon"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/linner"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_below="@+id/txthoadon"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mã Đơn Hàng:"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Khách Hàng:"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Số Điện Thoại:"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Địa Chỉ:"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Ngày Mua:"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Trình Trạng:"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:layout_below="@+id/txthoadon"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ma don hang"
+                    android:id="@+id/txtmadonhang"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ma don hang"
+                    android:id="@+id/txtkhachhang"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ma don hang"
+                    android:id="@+id/txtsodienthoai"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ma don hang"
+                    android:id="@+id/txtdiachi"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ma don hang"
+                    android:id="@+id/txtngaydat"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ma don hang"
+                    android:id="@+id/trinhtrang"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_below="@+id/linner"
+            android:id="@+id/linnerlaouthoadon"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Sản Phẩm Đã Mua"
+                android:gravity="center"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

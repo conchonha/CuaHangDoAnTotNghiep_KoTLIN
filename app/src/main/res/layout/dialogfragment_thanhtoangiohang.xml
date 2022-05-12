@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Thông Tin Đặt Hàng"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:src="@drawable/userkhmoi"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"
+                android:id="@+id/imgkhachhangmoi"
+                android:layout_height="35dp"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:src="@drawable/userlaythongtin"
+                android:layout_alignParentRight="true"
+                android:id="@+id/imglaythongtin"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="70dp"
+                android:layout_height="35dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/imgkhachhangmoi"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Thêm KH Mới"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorchu"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/imglaythongtin"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Lấy Thông Tin"
+                android:textSize="16sp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Họ Tên"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:background="@drawable/bodergiohang"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorchu"
+                android:gravity="center"
+                android:id="@+id/edthoten"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Địa Chỉ"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:background="@drawable/bodergiohang"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorchu"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:id="@+id/edtdiachi"
+                android:gravity="center"
+                android:layout_height="70dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Số Điện Thoại"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:background="@drawable/bodergiohang"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorchu"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:inputType="text"
+                android:id="@+id/edtsodienthoai"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Email"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:background="@drawable/bodergiohang"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorchu"
+                android:id="@+id/edtemail"
+                android:gravity="center"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_height="50dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:background="@color/colorchu"
+                android:textColor="@color/colorwhile"
+                android:text="Xác Nhận"
+                android:textSize="18sp"
+                android:id="@+id/btnsacnhan"
+                android:textStyle="bold"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

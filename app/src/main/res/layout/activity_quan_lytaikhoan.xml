@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161616"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbaradminquanlysp"
+            app:title=""
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/iconmenu"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:id="@+id/imgmenutaikhoanadmin"
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="30dp"
+            android:hint="Nhập SDT"
+            android:gravity="center"
+            android:id="@+id/edtseachsanphamadmin"
+            android:background="@drawable/boderedittexttimkim"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp">
+        </EditText>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/edtseachsanphamadmin"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imgsearchadmin"
+            android:src="@drawable/iconsearch"
+            android:scaleType="fitXY"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/Recyclerview_Quan_ly_tai_khoan"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

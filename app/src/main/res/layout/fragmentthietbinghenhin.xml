@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txttitlesanphammoi"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#22b14c"
+            android:paddingLeft="5dp"
+            android:text="Thiết Bị Nghe Nhìn"
+            android:gravity="center"
+            android:textColor="#F7F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="xem thêm"
+            android:textSize="18sp"
+            android:textStyle="italic|bold"
+            android:id="@+id/txtxemthem2"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/txtbackground2"
+            android:layout_marginRight="10dp"
+            android:textColor="#20D527"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="-13dp"
+            android:layout_marginLeft="-18dp"
+            android:layout_toRightOf="@id/txttitlesanphammoi"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/tamgiac" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:id="@+id/txtbackground2"
+            android:layout_below="@+id/txttitlesanphammoi"
+            android:background="#22b14c"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtbackground2"
+            android:id="@+id/recyclerviewthietbinghenhin"
+            android:padding="5dp"
+            android:scrollbars="none"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

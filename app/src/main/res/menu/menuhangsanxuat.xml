@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Macbook"
+        android:id="@+id/macbook"/>
+    <item android:title="HP"
+        android:id="@+id/hp"/>
+    <item android:title="Asus"
+        android:id="@+id/asus"/>
+    <item android:title="Dell"
+        android:id="@+id/dell"/>
+    <item android:title="Lenovo"
+        android:id="@+id/lenovo"/>
+    <item android:title="Acer"
+        android:id="@+id/acer"/>
+    <item android:title="Masstel"
+        android:id="@+id/masstel"/>
+    <item android:title="SamSung"
+        android:id="@+id/samsung"/>
+    <item android:title="Sony"
+        android:id="@+id/sony"/>
+    <item android:title="Toshiba"
+        android:id="@+id/tosiba"/>
+</menu>

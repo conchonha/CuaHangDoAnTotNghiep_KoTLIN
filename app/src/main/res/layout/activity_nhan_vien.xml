@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/mautrangphantaikhoan"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            app:title="Nhân Viên Giao Hàng"
+            android:background="@color/colorchu"
+            app:titleTextColor="#fff"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/iconmenu"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageviewmenu"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:scrollbars="none"
+        android:id="@+id/recyclerviewdangvanchuyennhanvien"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

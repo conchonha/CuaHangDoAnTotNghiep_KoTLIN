@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Nhanxetcuaban">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        app:title="Nhận Xét Của Bạn"
+        app:titleTextColor="@color/colorwhile"
+        android:id="@+id/toolbarnhanxetcuaban"
+        android:background="@color/colorchu"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/viewpagernhanxetcuaban"
+        android:layout_weight="1"/>
+    <com.google.android.material.tabs.TabLayout
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorchu"
+        android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/colorchu"
+        app:tabIndicatorHeight="2dp"
+        app:tabIconTint="@color/tab_icon_color"
+        android:id="@+id/tablayoutnhanxetcuaban"
+        android:elevation="10dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

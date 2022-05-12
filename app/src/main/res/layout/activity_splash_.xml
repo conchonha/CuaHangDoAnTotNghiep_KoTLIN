@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeSplash"
+    android:background="@drawable/background"
+    tools:context=".Activity.Splash_Activity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/card"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="150dp"
+        app:cardCornerRadius="100dp" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:padding="20dp"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@+id/card"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:text="Cửa Hàng Chúng Tôi "
+        android:textStyle="bold"
+        android:id="@+id/text0"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text0"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:text="Cung cấp các sản phẩm theo đúng tiêu chuẩn"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:textSize="19dp"
+            android:text=" Đáp ứng yêu cầu của khách hàng "
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:textSize="19dp"
+            android:text=" Tư vấn miễn phí "
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

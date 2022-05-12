@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Thêm Tài Khoản"
+        />
+    <item android:title="Khách Hàng"
+        android:id="@+id/khachhang"/>
+    <item android:title="Nhân Viên"
+        android:id="@+id/nhanvien"/>
+    <item android:title="Admin"
+        android:id="@+id/admin"/>
+</menu>

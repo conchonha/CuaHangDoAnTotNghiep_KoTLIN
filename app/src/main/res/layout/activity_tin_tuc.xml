@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TinTuc">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/back"
+            android:id="@+id/imgback"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/iconmenu"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/imgsearch"
+            android:layout_height="30dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Tìm Kiếm"
+            android:textSize="25dp"
+            android:background="@drawable/boderedittexttimkim"
+            android:textColor="#000"
+            android:id="@+id/edttimkimtintuc"
+            android:layout_toLeftOf="@+id/imgsearch"
+            android:layout_toRightOf="@+id/imgback"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edttimkimtintuc"
+        android:id="@+id/recyclerviewtintuc"
+        android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerviewtintucphu"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
